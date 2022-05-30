@@ -30,11 +30,11 @@ class Employee_details:
                 # print(value)
 
     def new_employee_details(self):
-        serial_id = (input("Enter the Serial ID:").upper())
+        serial_id = (input("Enter the Serial ID:"))
         user_name = input("Enter the Name:")
         user_id = input("Enter the ID:")
         user_model = input("Enter the Model:")
-        a_dict = {serial_id: {"Name": user_name, "ID": user_id, "Model": user_model}}
+        a_dict = {(serial_id.upper()): {"Name": user_name, "ID": user_id, "Model": user_model}}
         print(a_dict)
 
         with open("Employee_details.json") as f:

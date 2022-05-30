@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'Ui_app_rc2JWUNEG.ui'
+## Form generated from reading UI file 'Ui_app_rc2ICyxbB.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.3.0
 ##
@@ -23,7 +23,7 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(863, 620)
+        MainWindow.resize(863, 641)
         MainWindow.setStyleSheet(u"background-color: rgb(85, 85, 85);\n"
 "\n"
 "border: 1px solid #4a4a4a;\n"
@@ -45,12 +45,12 @@ class Ui_MainWindow(object):
         self.display_user_details = QLabel(self.frame)
         self.display_user_details.setObjectName(u"display_user_details")
         self.display_user_details.setGeometry(QRect(40, 160, 771, 101))
+        font = QFont()
+        font.setPointSize(14)
+        font.setBold(True)
+        self.display_user_details.setFont(font)
         self.display_user_details.setStyleSheet(u"background-color: rgb(255, 255, 255);")
         self.display_user_details.setAlignment(Qt.AlignCenter)
-        self.display_date = QLabel(self.frame)
-        self.display_date.setObjectName(u"display_date")
-        self.display_date.setGeometry(QRect(30, 50, 61, 16))
-        self.display_date.setStyleSheet(u"background-color: rgb(85, 85, 85);")
         self.layoutWidget = QWidget(self.frame)
         self.layoutWidget.setObjectName(u"layoutWidget")
         self.layoutWidget.setGeometry(QRect(730, 20, 91, 48))
@@ -69,18 +69,6 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.out_time)
 
-        self.layoutWidget1 = QWidget(self.frame)
-        self.layoutWidget1.setObjectName(u"layoutWidget1")
-        self.layoutWidget1.setGeometry(QRect(30, 20, 59, 20))
-        self.horizontalLayout = QHBoxLayout(self.layoutWidget1)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
-        self.display_time = QLabel(self.layoutWidget1)
-        self.display_time.setObjectName(u"display_time")
-        self.display_time.setStyleSheet(u"background-color: rgb(85, 85, 85);")
-
-        self.horizontalLayout.addWidget(self.display_time)
-
         self.label_6 = QLabel(self.frame)
         self.label_6.setObjectName(u"label_6")
         self.label_6.setGeometry(QRect(150, 140, 531, 31))
@@ -89,12 +77,43 @@ class Ui_MainWindow(object):
         self.label_6.setFrameShadow(QFrame.Plain)
         self.label_6.setTextFormat(Qt.RichText)
         self.label_6.setAlignment(Qt.AlignCenter)
-        self.lineEdit = QLineEdit(self.frame)
-        self.lineEdit.setObjectName(u"lineEdit")
-        self.lineEdit.setGeometry(QRect(160, 100, 231, 31))
-        self.pushButton = QPushButton(self.frame)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(400, 110, 75, 24))
+        self.display_time = QLabel(self.frame)
+        self.display_time.setObjectName(u"display_time")
+        self.display_time.setGeometry(QRect(10, 10, 121, 41))
+        self.display_time.setStyleSheet(u"background-color: rgb(85, 85, 85);")
+        self.display_time.setAlignment(Qt.AlignCenter)
+        self.layoutWidget1 = QWidget(self.frame)
+        self.layoutWidget1.setObjectName(u"layoutWidget1")
+        self.layoutWidget1.setGeometry(QRect(260, 100, 321, 31))
+        self.horizontalLayout = QHBoxLayout(self.layoutWidget1)
+        self.horizontalLayout.setSpacing(16)
+        self.horizontalLayout.setObjectName(u"horizontalLayout")
+        self.horizontalLayout.setContentsMargins(0, 0, 5, 0)
+        self.scanbarcode = QLineEdit(self.layoutWidget1)
+        self.scanbarcode.setObjectName(u"scanbarcode")
+        sizePolicy = QSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.scanbarcode.sizePolicy().hasHeightForWidth())
+        self.scanbarcode.setSizePolicy(sizePolicy)
+        self.scanbarcode.setStyleSheet(u"background-color: rgb(255, 255, 255);")
+
+        self.horizontalLayout.addWidget(self.scanbarcode)
+
+        self.enter = QPushButton(self.layoutWidget1)
+        self.enter.setObjectName(u"enter")
+        self.enter.setEnabled(True)
+        sizePolicy1 = QSizePolicy(QSizePolicy.Maximum, QSizePolicy.MinimumExpanding)
+        sizePolicy1.setHorizontalStretch(10)
+        sizePolicy1.setVerticalStretch(0)
+        sizePolicy1.setHeightForWidth(self.enter.sizePolicy().hasHeightForWidth())
+        self.enter.setSizePolicy(sizePolicy1)
+        self.enter.setStyleSheet(u"background-color: rgb(255, 255, 255);\n"
+"font: 700 11pt \"Segoe UI\";\n"
+"")
+
+        self.horizontalLayout.addWidget(self.enter)
+
 
         self.verticalLayout.addWidget(self.frame)
 
@@ -186,12 +205,12 @@ class Ui_MainWindow(object):
         self.label_5 = QLabel(self.frame_3)
         self.label_5.setObjectName(u"label_5")
         self.label_5.setGeometry(QRect(20, 10, 361, 31))
-        font = QFont()
-        font.setFamilies([u"Stencil"])
-        font.setPointSize(20)
-        font.setBold(False)
-        font.setItalic(False)
-        self.label_5.setFont(font)
+        font1 = QFont()
+        font1.setFamilies([u"Stencil"])
+        font1.setPointSize(20)
+        font1.setBold(False)
+        font1.setItalic(False)
+        self.label_5.setFont(font1)
         self.label_5.setStyleSheet(u"\n"
 "font: 20pt \"Stencil\";\n"
 "background-color: rgb(169,169,169);")
@@ -207,7 +226,7 @@ class Ui_MainWindow(object):
         self.label_7 = QLabel(self.frame_4)
         self.label_7.setObjectName(u"label_7")
         self.label_7.setGeometry(QRect(10, 10, 381, 31))
-        self.label_7.setFont(font)
+        self.label_7.setFont(font1)
         self.label_7.setStyleSheet(u"\n"
 "font: 20pt \"Stencil\";\n"
 "background-color: rgb(169,169,169);")
@@ -233,12 +252,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
         self.display_user_details.setText("")
-        self.display_date.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:700; color:#ffffff;\">Date</span></p></body></html>", None))
         self.in_time.setText(QCoreApplication.translate("MainWindow", u"IN", None))
         self.out_time.setText(QCoreApplication.translate("MainWindow", u"OUT", None))
-        self.display_time.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:700; color:#ffffff;\">Time</span></p></body></html>", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#ffffff;\">Display Employee Details</span></p></body></html>", None))
-        self.pushButton.setText(QCoreApplication.translate("MainWindow", u"PushButton", None))
+        self.display_time.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:700; color:#ffffff;\">Time</span></p></body></html>", None))
+        self.scanbarcode.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Scan the barcode", None))
+        self.enter.setText(QCoreApplication.translate("MainWindow", u"     Enter      ", None))
         self.serial_id.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:10pt; font-weight:700; color:#ffffff;\">SERIAL ID</span></p></body></html>", None))
         self.serialid_text.setInputMask("")
         self.serialid_text.setText("")
