@@ -1,6 +1,6 @@
 import sys
 import os
-
+import pandas as pd
 from PySide6 import *
 import qt_material
 from datetime import datetime
@@ -45,8 +45,11 @@ class Mainwindow(QMainWindow):
         # print(user_in)
         for key, value in data.items():
             if self.user_in == key:
-                print(value)
-                self.display_user_in = str(value)
+                #print(value)
+                self._user_in = value
+                #self.display_user_in = pd.DataFrame.from_dict(value)
+                self.display_user_in = str(self._user_in).replace("{", "").replace("}", "")\
+                                           .replace("'","").replace("'","")
                 print(self.display_user_in)
                 self.ui.display_user_details.setText(self.display_user_in)
                 break

@@ -55,7 +55,12 @@ border-bottom-left-radius: 4px;</string>
         </font>
        </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(255, 255, 255);</string>
+        <string notr="true">background-color: rgb(255, 255, 255);
+
+border-top-left-radius: 18px;
+border-top-right-radius: 18px;
+border-bottom-right-radius: 18px;
+border-bottom-left-radius: 18px;</string>
        </property>
        <property name="text">
         <string/>
@@ -107,7 +112,12 @@ border-bottom-left-radius: 4px;</string>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(85, 85, 85);
-font: 900 9pt &quot;Arial Black&quot;;</string>
+font: 900 9pt &quot;Arial Black&quot;;
+
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border-bottom-left-radius: 0px;</string>
        </property>
        <property name="frameShadow">
         <enum>QFrame::Plain</enum>
@@ -131,8 +141,19 @@ font: 900 9pt &quot;Arial Black&quot;;</string>
          <height>41</height>
         </rect>
        </property>
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="styleSheet">
-        <string notr="true">background-color: rgb(85, 85, 85);</string>
+        <string notr="true">background-color: rgb(85, 85, 85);
+
+border-top-left-radius: 18px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 18px;
+border-bottom-left-radius: 0px;</string>
        </property>
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Time&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
